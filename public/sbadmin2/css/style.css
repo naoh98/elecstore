@@ -1,0 +1,22 @@
+.img-fix-width {
+
+}
+.user__image {
+    width: 330px;
+
+}
+.img-responsive{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.background-login-image {
+    background: url('./img/login-admin.png');
+    background-position: center;
+    background-size: cover;
+}
+.background-register-image {
+    background: url('./img/register-admin.png');
+    background-position: center;
+    background-size: cover;
+}
