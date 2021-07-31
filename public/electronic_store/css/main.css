@@ -622,3 +622,24 @@ li[role='presentation']{
     left: 0;
     text-align: right;
 }
+.slides{
+    display: flex;
+    justify-content: center;
+}
+.slides img{
+    width: 550px;
+    height: 400px;
+}
+.slides>li{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.slides>li:not(:first-child){
+    display: none;
+}
+.single-left{
+    height: 410px;
+    position: relative;
+}

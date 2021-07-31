@@ -3189,9 +3189,6 @@ td.invert-image a img {
 	.banner1 h2,.banner2 h2,.banner3 h2,.banner10 h2 {
 		padding: 2em 0 0;
 	}
-	.navbar-nav > li:nth-child(1) {
-		margin-left: 6em;
-	}
 	.banner h3 {
 		width: 40%;
 		font-size: 1.5em;
@@ -3335,9 +3332,6 @@ td.invert-image a img {
 	}
 	.navbar-nav > li > a {
 		padding: 20px 20px !important;
-	}
-	.navbar-nav > li:nth-child(1) {
-		margin-left: 4em;
 	}
 	.banner h3 {
 		width: 50%;
@@ -3631,7 +3625,7 @@ td.invert-image a img {
 		margin-left:1.5em !important;
 	}
 	.single-left {
-		width: 70%;
+		width: 100%;
 		margin: 0 auto;
 	}
 }

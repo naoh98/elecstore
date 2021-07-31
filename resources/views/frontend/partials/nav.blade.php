@@ -12,11 +12,11 @@
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-                <ul class="nav navbar-nav">
-                    <li><a href="{{url('/')}}">Home</a></li>
+                <ul class="nav navbar-nav row">
+                    <li ><a  href="{{url('/')}}">Home</a></li>
                     <!-- Mega Menu -->
                     <li class="dropdown">
-                        <a href="{{url('/shop-category')}}" style="display: inline-block; padding: 20px 8px 20px 30px;">Product</a>
+                        <a  href="{{url('/shop-category')}}" style="display: inline-block; padding: 20px 8px 20px 30px;">Product</a>
                         <span class="dropdown-toggle" data-toggle="dropdown">
                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         </span>
@@ -24,9 +24,8 @@
                                 <?php showcat($menu); ?>
                             </div>
                     </li>
-                    <li><a href="{{ route('news.index') }}">News</a></li>
-                    <li><a href="{{ route('about') }}">About</a></li>
-                    <li><a href="{{ route('contact') }}">Contact Us</a></li>
+                    <li><a  href="{{ route('news.index') }}">News</a></li>
+                    <li ><a  href="{{ route('about') }}">About</a></li>
                 </ul>
             </div>
         </nav>

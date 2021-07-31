@@ -17,8 +17,8 @@
     <!-- //breadcrumbs -->
     <!-- single -->
     <div class="single" style="padding-bottom: 3em;">
-        <div class="container">
-            <div class="col-md-5 single-left">
+        <div class="container" style="border-left: 7px solid lightgray; border-right: 7px solid lightgray;">
+            <div class="col-md-5 col-sm-12 col-ct-12 single-left">
                 <div class="flexslider">
                     <ul class="slides">
                         <?php
@@ -34,7 +34,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-7 single-right">
+            <div class="col-md-7 col-sm-12 single-right">
                 <h3 style="text-align: center;">{{$product->product_title}}</h3>
                 <div class="description">
                     <div>
@@ -209,93 +209,6 @@
         </div>
     </div>
 
-    <!-- Related Products -->
-    <div class="w3l_related_products">
-        <div class="container">
-            <h3>Related Products</h3>
-            <ul id="flexiselDemo2">
-                <?php
-                foreach ($related_pros as $related_pro){ ?>
-                    <li>
-                        <div class="w3l_related_products_grid">
-                            <div class="agile_ecommerce_tab_left mobiles_grid">
-                                <div class="hs-wrapper hs-wrapper3">
-                                    <?php
-                                    if ($related_pro->product_images){
-                                        $data = json_decode($related_pro->product_images);
-                                        foreach ($data as $image){ ?>
-                                        <img src="{{asset('/storage/files/'.basename($image))}}" alt=" " class="img-responsive" />
-                             <?php      }
-                                    }
-                                    ?>
-                                    <div class="w3_hs_bottom">
-                                        <div class="flex_ecommerce">
-                                            <a style="display: block; border-radius: 7px; width: 50%; margin: 0px auto;" href="{{url('/product/'.$related_pro->product_id)}}"><span>Detail</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <h5><a href="{{url('/product/'.$related_pro->product_id)}}">{{$related_pro->product_title}}</a></h5>
-                                <div class="simpleCart_shelfItem">
-                                    <?php $price= number_format($related_pro->product_price_sell ,0,',','.'); ?>
-                                    <p class="flexisel_ecommerce_cart"><i class="item_price"><?php echo $price. ' $'; ?></i></p>
-                                        <a href="#" data-url="{{ route('addToCart', ['id' => $related_pro->product_id]) }}" class="btn btn-primary add_to_cart">Add to cart</a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-          <?php }
-                ?>
-            </ul>
-
-            <script type="text/javascript">
-                $(window).load(function() {
-                    $("#flexiselDemo2").flexisel({
-                        visibleItems:4,
-                        animationSpeed: 1000,
-                        autoPlay: true,
-                        autoPlaySpeed: 3000,
-                        pauseOnHover: true,
-                        enableResponsiveBreakpoints: true,
-                        responsiveBreakpoints: {
-                            portrait: {
-                                changePoint:480,
-                                visibleItems: 1
-                            },
-                            landscape: {
-                                changePoint:640,
-                                visibleItems:2
-                            },
-                            tablet: {
-                                changePoint:768,
-                                visibleItems: 3
-                            }
-                        }
-                    });
-
-                });
-            </script>
-        </div>
-    </div>
-    <!-- //Related Products -->
-
-    <!-- flexslider -->
-    <script defer src="{{asset('/electronic_store')}}/js/jquery.flexslider.js"></script>
-    <link rel="stylesheet" href="{{asset('/electronic_store')}}/css/flexslider.css" type="text/css" media="screen" />
-    <script>
-        // Can also be used with $(document).ready()
-        $(window).load(function() {
-            $('.flexslider').flexslider({
-                animation: "slide",
-                controlNav: "thumbnails"
-            });
-        });
-    </script>
-    <!-- flexslider -->
-
-    <!-- zooming-effect -->
-    <script src="{{asset('/electronic_store')}}/js/imagezoom.js"></script>
-    <!-- //zooming-effect -->
 
     <script>
         $.ajaxSetup({

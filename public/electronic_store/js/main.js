@@ -53,4 +53,18 @@
     $(function () {
         $('.add_to_cart').on('click', addToCart);
     })
+//
+    $(document).ready(function () {
+        var count =0;
+        var length = $(".slides>li").length;
+        var x = setInterval( function () {
+            $(".slides>li").eq(count).hide();
+            count++;
+            if (count>=length){
+                count = 0;
+            }
+            $(".slides>li").eq(count).show();
+        },1500);
+
+    });
 
