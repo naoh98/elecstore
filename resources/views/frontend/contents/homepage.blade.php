@@ -81,7 +81,7 @@
                                         $data = json_decode($item->product_images);
                                         if(is_array($data)){
                                         foreach($data as $image){ ?>
-                                        <img src="{{asset('storage/files/' .basename($image))}}" alt="" class="img-responsive" >
+                                        <img src="{{asset('storage/files/' .basename($image),true)}}" alt="" class="img-responsive" >
                                         <?php }
                                         } ?>
                                         <div class="w3_hs_bottom">
