@@ -26,7 +26,7 @@ Route::get('/shop-category/product_filter','Frontend\CategoryController@filteral
 //route hiển thị view sản phẩm theo danh mục electronic store
 Route::get('/shop-category/{category_id}','Frontend\CategoryController@index')->name('cat.pro');
 //route chức năng lọc sản phẩm theo danh mục
-Route::get('/shop-category/{category_id}/product_filter','Frontend\CategoryController@filter')->name('filter');
+Route::get('//shop-category/{category_id}/product_filter','Frontend\CategoryController@filter')->name('filter');
 
 //route hiển thị Detail sản phẩm
 Route::get('/product/{product_id}','Frontend\ProductController@index');
