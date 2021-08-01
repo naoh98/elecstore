@@ -64,6 +64,15 @@
                             </h2>
                             <div class="cat_title_de"></div>
                         </div>
+
+                        <div class="w3ls_mobiles_grid_right_grid2_right">
+                            <select name="select_item" class="select_item product_filter" data-url="{{ route('filter',$this_cat->category_id) }}">
+                                <option value="all">Default</option>
+                                <option value="lastest" {{request()->get('sortby')=='lastest' ? 'selected':''}}>Lastest</option>
+                                <option value="price_desc" {{request()->get('sortby')=='price_desc' ? 'selected':''}}>Price (descending)</option>
+                                <option value="price_asc" {{request()->get('sortby')=='price_asc' ? 'selected':''}}>Price (ascending)</option>
+                            </select>
+                        </div>
                         <div class="clearfix"> </div>
                     </div>
 
