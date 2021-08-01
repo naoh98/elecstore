@@ -66,7 +66,7 @@
                         </div>
 
                         <div class="w3ls_mobiles_grid_right_grid2_right">
-                            <select name="select_item" class="select_item product_filter">
+                            <select name="select_item" class="select_item product_filter" data-url="{{ route('filter',$this_cat->category_id) }}">
                                 <option value="all">Default</option>
                                 <option value="lastest" {{request()->get('sortby')=='lastest' ? 'selected':''}}>Lastest</option>
                                 <option value="price_desc" {{request()->get('sortby')=='price_desc' ? 'selected':''}}>Price (descending)</option>
@@ -140,6 +140,7 @@
             var url1 = new URL(url);
             var manu = url1.searchParams.get("manu");
             var sort = url1.searchParams.get("sortby");
+            var destination = $(".product_filter").data("url");
             var data = {};
             data.sortby=value;
             if (manu){
@@ -147,7 +148,7 @@
             }
 
             $.ajax({
-                url: '{{ route('filter',$this_cat->category_id) }}/',
+                url: destination,
                 data: data,
                 method: 'post',
                 beforeSend: function() {
