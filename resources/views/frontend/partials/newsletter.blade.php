@@ -6,7 +6,7 @@
             <p>Excepteur sint occaecat cupidatat non proident, sunt.</p>
         </div>
         <div class="col-md-6 w3agile_newsletter_right">
-            <form action="#" method="post">
+            <form action="#" method="post" onsubmit="return false;">
                 <input type="email" name="Email" placeholder="Email" required="">
                 <input type="submit" value="" />
             </form>

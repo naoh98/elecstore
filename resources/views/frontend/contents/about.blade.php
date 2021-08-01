@@ -45,7 +45,7 @@
                     <div class="clearfix"> </div>
                 </div>
                 <div class="col-md-6 w3ls_about_grid_right">
-                    <img src="{{ asset('/electronic_store') }}/images/52.jpg" alt=" " class="img-responsive" />
+                    <img src="{{ asset('/electronic_store') }}/images/Our-attorna_img-1.jpeg" alt=" " class="img-responsive" />
                 </div>
                 <div class="clearfix"> </div>
             </div>
@@ -57,19 +57,7 @@
         <div class="container">
             <h3>Meet Our Team</h3>
             <div class="wthree_team_grids">
-                <div class="col-md-6 wthree_team_grid">
-                    <img src="{{ asset('/electronic_store') }}/images/Our-attorna_img-1.jpeg" alt=" " class="img-responsive team_image" />
-                    <h4>Quang Anh <span>Developer</span></h4>
-                    <div class="agileits_social_button">
-                        <ul>
-                            <li><a href="#" class="facebook"> </a></li>
-                            <li><a href="#" class="twitter"> </a></li>
-                            <li><a href="#" class="google"> </a></li>
-                            <li><a href="#" class="pinterest"> </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 wthree_team_grid">
+                <div class="col-md-12 wthree_team_grid">
                     <img src="{{ asset('/electronic_store') }}/images/Our-attorna_img-3.jpeg" alt=" " class="img-responsive team_image" />
                     <h4>Phương Hoàn <span>Developer</span></h4>
                     <div class="agileits_social_button">
