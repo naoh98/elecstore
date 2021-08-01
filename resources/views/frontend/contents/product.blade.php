@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="banner banner3"
-            style="background: url('{{asset("/storage/files/".basename($this_cat->category_image))}}') no-repeat center;background-size: 100% 100%;">
+            style="background: url('{{asset("/storage/files/".basename($this_cat->category_image),true)}}') no-repeat center;background-size: 100% 100%;">
     </div>
 
     <div class="breadcrumb_dress">
@@ -89,7 +89,7 @@
                                         $data = json_decode($value->product_images);
                                         if(is_array($data)){
                                         foreach($data as $image){ ?>
-                                        <img src="{{asset('storage/files/' .basename($image))}}" alt="" class="img-responsive" >
+                                        <img src="{{asset('storage/files/' .basename($image),true)}}" alt="" class="img-responsive" >
                                         <?php }
                                         }
                                         } ?>
