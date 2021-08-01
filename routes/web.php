@@ -138,9 +138,9 @@ Route::prefix('admin')->group(function() {
     Route::get('/news/create', 'Backend\NewController@create')->name('admin.new.create');
     Route::get('/news/edit/{new_id}', 'Backend\NewController@edit')->name('admin.new.edit');
     //route thống kê order
-    Route::get('/orders', 'Backend\Ordercontroller@index')->name('orders.index');
+    Route::get('/orders', 'Backend\OrderController@index')->name('orders.index');
     //route Detail order
-    Route::get('/orders/item/{order_id}', 'Backend\Ordercontroller@detail')->name('orders.detail');
+    Route::get('/orders/item/{order_id}', 'Backend\OrderController@detail')->name('orders.detail');
     //route thống kê khách hàng
     Route::get('/customers', function () {
         $order_items = \App\Models\OrderModel::get();
