@@ -9,8 +9,7 @@
                     <li><p>{{ getConfigValue('phone_contact') }}</p></li>
                     <li>Email:
                         <ul>
-                            <li>{{ getConfigValue('email1') }}</li>
-                            <li>{{ getConfigValue('email2') }}</li>
+                            <li>{{ getConfigValue('mail') }}</li>
                         </ul>
                     </li>
                 </ul>
