@@ -7,3 +7,4 @@ và sửa lại nội dung
 sửa lại tên CSDL , ip CSDL ...
 3 - php artisan key:generate
 sinh app key bảo mật mới
+hihi
