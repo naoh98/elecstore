@@ -66,7 +66,7 @@ class ManufacturerController extends Controller
         $arr['manufacturer_desc'] = $request->manufacturer_desc;
         if ($request->hasFile('manufacturer_image')){
             $filename = $request->manufacturer_image->getClientOriginalName();
-            $path = $request->manufacturer_image->store($filename);
+            $path = $request->manufacturer_image->storeAs('public/files',$filename);
             $arr['manufacturer_image'] = $path;
         }
         DB::table("manufacturer")->where("manufacturer_id",$manufacturer_id)->update($arr);
