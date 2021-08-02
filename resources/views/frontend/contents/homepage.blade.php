@@ -302,7 +302,7 @@
                     if($manu->manufacturer_image){ ?>
                     <li>
                         <a href="{{route('cat.pro.all',['manu'=>$manu->manufacturer_id])}}">
-                            <img src="{{asset('storage/files/'.basename($manu->manufacturer_image),true)}}" alt=" " class="img-responsive" />
+                            <img src="{{asset('storage/files/'.basename($manu->manufacturer_image))}}/" alt=" " class="img-responsive" />
                         </a>
                     </li>
          <?php      }
