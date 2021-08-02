@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\URL;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,10 +12,7 @@ use Illuminate\Support\Facades\URL;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//
-if (env('APP_ENV') === 'storenology') {
-    URL::forceScheme('https');
-}
+
 //route hiển thị view electronic store
 Route::get('/','Frontend\IndexController@index')->name('homepage');
 
