@@ -305,7 +305,14 @@
                             <img src="{{asset('storage/files/'.basename($manu->manufacturer_image))}}" alt=" " class="img-responsive" />
                         </a>
                     </li>
-         <?php      }
+         <?php      }else{ ?>
+                    <li>
+                        <a href="{{route('cat.pro.all',['manu'=>$manu->manufacturer_id])}}">
+                            <img src="{{asset('electroinc_store/images/notfound.png')}}" alt=" " class="img-responsive" />
+                        </a>
+                    </li>
+                    <?php
+                    }
                 }
                 ?>
             </ul>
