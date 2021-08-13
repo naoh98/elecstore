@@ -69,7 +69,6 @@ class IndexController extends Controller
         ->get();
 
         $manufacturer = DB::table('manufacturer')->get();
-
         return view('frontend.contents.homepage',['top_cat'=>$categories,'product'=>$a,'lastest_product'=>$lastest_products,'manufacturer'=>$manufacturer]);
     }
 
